@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/**
+ * @copyright	Copyright (c) 2019 rbs4. All rights reserved.
+ * @license		http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL
+ */
+-->
+<extension type="plugin" version="3.0" group="system" method="upgrade">
+	<name>plg_system_scrollanimation</name>
+	<author></author>
+	<creationDate>April 2019</creationDate>
+	<copyright>Copyright (c) 2019 R2H. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>rick@r2h.nl</authorEmail>
+	<authorUrl>https://www.r2h.nl</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+		Animate on Scroll using AOS.JS For configurations, examples and options visit: <a href="https://michalsnik.github.io/aos/" target="_blank">AOS on Github</a>
+	]]>
+	</description>
+
+	<files>
+		<filename plugin="scrollanimation">scrollanimation.php</filename>
+		<filename>index.html</filename>
+		<folder>form</folder>
+	</files>
+
+	<media folder="media" destination="plg_system_scrollanimation">
+		<folder>css</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<filename>index.html</filename>
+	</media>
+
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_scrollanimation.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_scrollanimation.sys.ini</language>
+	</languages>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+                <field
+                    name="disableon"
+                    type="list"
+                    label="PLG_SYSTEM_SCROLLANIMATION_DISABLEON"
+                    filter="string"
+                    default="false">
+                    <option value="false">PLG_SYSTEM_SCROLLANIMATION_FALSE</option>
+                    <option value="phone">PLG_SYSTEM_SCROLLANIMATION_PHONE</option>
+                    <option value="tablet">PLG_SYSTEM_SCROLLANIMATION_TABLET</option>
+                    <option value="mobile">PLG_SYSTEM_SCROLLANIMATION_MOBILE</option>
+                </field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
