@@ -73,14 +73,14 @@ class PlgSystemScrollanimation extends JPlugin
         // Add Stylesheet file.
         \Joomla\CMS\HTML\HTMLHelper::_(
             'stylesheet',
-            'plg_system_scrollanimation/style.css',
+            'plg_system_scrollanimation/aos.css',
             array('version' => 'auto', 'relative' => true)
         );
 
         // Add Script file.
         \Joomla\CMS\HTML\HTMLHelper::_(
             'script',
-            'plg_system_scrollanimation/script.js',
+            'plg_system_scrollanimation/aos.js',
             array('version' => 'auto', 'relative' => true),
             ['defer' => 'true']
         );
